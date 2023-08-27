@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class LoadPageTest {
 
     @Test
-    public void LoadingPage(){
+    public void loadingPage(){
         open("https://github.com/");
         $(byTagAndText("button", "Solutions")).hover();
         $(byTagAndText("button", "Solutions")).sibling(0).$(byText("Enterprise")).click();
